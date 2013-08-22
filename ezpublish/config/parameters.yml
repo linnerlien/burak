@@ -1,0 +1,4 @@
+parameters:
+    secret: 214cb43e9b19a9fa690a0cfafaa040949ca23146
+    locale_fallback: en
+    ezpublish_legacy.default.view_default_layout: 'CatzBurakBundle::pagelayout.html.twig'
