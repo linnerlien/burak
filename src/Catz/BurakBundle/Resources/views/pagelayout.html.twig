@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Burak</title>
+    <meta name="description" content="">
+</head>
+<body>THIS IS MY PAGELAYOUT
+<header class="main-header">
+    {% block header %}
+        <nav class="navbar">
+                    {% block topnav %}
+                        Top Menu will go here
+                    {% endblock %}
+        </nav>
+    {% endblock %}
+</header>
+
+<div class="wrapper">
+    <div class="main"
+                {% block content %}{% endblock %}
+      </div>
+            <aside class="sidebar">
+                {% block sidebar %}
+                    Sidebar stuff goes here
+                {% endblock %}
+            </aside>
+</div>
+
+<footer class="footer">
+    {% block footer %}
+        Footer stuff goes here
+    {% endblock %}
+</footer>
+</body>
+</html>
