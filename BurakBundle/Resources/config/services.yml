@@ -1,7 +1,0 @@
-parameters:
-#    catz_burak.example.class: Catz\BurakBundle\Example
-
-services:
-#    catz_burak.example:
-#        class: %catz_burak.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]

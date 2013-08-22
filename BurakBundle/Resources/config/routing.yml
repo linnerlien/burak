@@ -1,3 +1,0 @@
-catz_burak_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: CatzBurakBundle:Default:index }
