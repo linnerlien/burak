@@ -1,23 +1,24 @@
 ezpublish:
     siteaccess:
-        default_siteaccess: eng
+        default_siteaccess: burak
         list:
-            - ez5_site
+            - burak
             - eng
             - nor
             - pol
-            - ez5_site_admin
+            - burak_admin
         groups:
             ezwebin_site_group:
-                - ez5_site
+                - burak
                 - eng
                 - nor
                 - pol
-                - ez5_site_admin
+                - burak_admin
+                - burak
         match:
             Map\Host:
-                ez5: ez5_site
-                admin.ez5: ez5_site_admin    
+                ez5: burak
+                admin.ez5: burak_admin    
     system:
         ezwebin_site_group:
             database:
@@ -89,7 +90,7 @@ ezpublish:
                     filters:
                         - { name: geometry/scaledownonly, params: [100, 80] }
             session_name: eZSESSID
-        ez5_site_admin:
+        burak_admin:
             legacy_mode: true
             languages:
                 - eng-GB
@@ -124,7 +125,7 @@ ezpublish:
                     reference: null
                     filters:
                         - { name: geometry/scaledownonly, params: [100, 80] }
-        ez5_site:
+        burak:
             legacy_mode: false
             languages:
                 - eng-GB

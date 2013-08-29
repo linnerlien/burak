@@ -27,6 +27,7 @@ assetic:
     use_controller: false
     filters:
         cssrewrite: ~
+        sass: ~
 
 ez_publish_legacy:
     enabled: true

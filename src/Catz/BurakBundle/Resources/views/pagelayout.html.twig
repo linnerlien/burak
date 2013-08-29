@@ -2,8 +2,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Burak</title>
     <meta name="description" content="">
+    {%stylesheets "bundles/catzburak/css/*" filter="cssrewrite"%}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {%endstylesheets%}
+    <title>Burak</title>
 </head>
 <body>THIS IS MY PAGELAYOUT
 <header class="main-header">
