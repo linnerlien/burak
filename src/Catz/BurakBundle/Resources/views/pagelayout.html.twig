@@ -8,8 +8,9 @@
     {%endstylesheets%}
     <title>Burak</title>
 </head>
-<body>THIS IS MY PAGELAYOUT
-<header class="main-header">
+<body>
+<header class="header">
+    <div class="wrapper">
     {% block header %}
         <nav class="navbar">
                     {% block topnav %}
@@ -17,17 +18,20 @@
                     {% endblock %}
         </nav>
     {% endblock %}
+     </div>
 </header>
 
-<div class="wrapper">
-    <div class="main"
+<div class="content">
+    <div class="wrapper">
+        <div class="main"
                 {% block content %}{% endblock %}
-      </div>
-            <aside class="sidebar">
+        </div>
+        <aside class="sidebar">
                 {% block sidebar %}
                     Sidebar stuff goes here
                 {% endblock %}
-            </aside>
+        </aside>
+     </div>
 </div>
 
 <footer class="footer">
