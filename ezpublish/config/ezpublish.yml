@@ -128,9 +128,19 @@ ezpublish:
         burak:
             legacy_mode: false
             languages:
-                - eng-GB
                 - nor-NO
+                - eng-GB
                 - pol-PL
+            location_view:
+              full:
+                burak_frontpage:
+                  template: CatzBurakBundle:full:burak_frontpage.html.twig
+                  match:
+                    Identifier\ContentType: burak_frontpage
+                frontpage:
+                  template: CatzBurakBundle:Full:frontpage.html.twig
+                  match:
+                    Identifier\ContentType: frontpage
             image_variations:
                 small:
                     reference: null
